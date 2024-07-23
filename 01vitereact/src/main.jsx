@@ -16,15 +16,15 @@ function Main(){
   },
   children : 'Clich me to visit Google'
 } */
-/* const anotherElement =(
+const anotherElement =(
   <a href="https://google.com" target= '_blank' >visit google</a>
-) */
+)
 
 const username2 = "jab pura react element code ho jae uske bad hum variable like this can insert"
 const reactElement = React.createElement(
   'a',
   {href : 'https://facebook.com', target : '_blank'},
-  'click me visit facebook',
+  'click me visit facebook ',
    username2 // yha bhi completely evaluated chiz hi likh skte hai
 )
  
@@ -33,7 +33,7 @@ const reactElement = React.createElement(
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   
-    //anotherElement
-    reactElement
+   anotherElement,
+   // reactElement,
    //<App/>
 )
